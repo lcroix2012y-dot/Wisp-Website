@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,8 +23,6 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0
 .logo svg{width:34px;height:34px;filter:drop-shadow(0 0 8px rgba(139,124,255,.6))}
 nav a.lnk{font-weight:600;text-decoration:none;color:var(--mute)}
 nav a.lnk:hover{color:var(--ink)}
-
-/* hero */
 .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:24px;padding:36px 0 80px;min-height:78vh}
 .hero h1{font-size:clamp(3rem,7.4vw,6.2rem);font-weight:800;padding-bottom:.08em;background:linear-gradient(180deg,#fff 25%,#b9adff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:1.25rem;color:var(--mute);max-width:30em;margin:26px 0 34px}
@@ -33,8 +32,6 @@ nav a.lnk:hover{color:var(--ink)}
 .btn.pri{background:var(--grad);background-origin:border-box;border-color:transparent;color:#171233;font-size:1.05rem}
 .btn svg{width:20px;height:20px;flex:none}
 .hint{margin-top:18px;font-size:.92rem;color:var(--mute)}
-
-/* ghost stage */
 .stage{position:relative;aspect-ratio:1/1.05;display:grid;place-items:center;perspective:900px;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .stage::before{content:"";position:absolute;inset:6% 4%;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 68%);filter:blur(10px)}
 .tilt{position:relative;width:min(80%,380px);transform-style:preserve-3d;will-change:transform}
@@ -54,13 +51,9 @@ nav a.lnk:hover{color:var(--ink)}
 .wink .eyeR{display:none}.wink .arc{opacity:1}
 .bubble{position:absolute;top:6%;right:4%;padding:8px 16px;border-radius:18px 18px 18px 4px;background:var(--panel);border:1.5px solid var(--line);font:800 1.1rem "Bricolage Grotesque",sans-serif;opacity:0;transform:translateY(8px) scale(.9);transition:.25s;pointer-events:none}
 .bubble.show{opacity:1;transform:none}
-
-/* sections */
 section{padding:84px 0}
 h2{font-size:clamp(2.1rem,4.4vw,3.4rem);font-weight:800;max-width:14em}
 .sub{color:var(--mute);max-width:34em;margin-top:16px}
-
-/* demo */
 .demo{margin-top:44px;display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:start}
 .sw{display:flex;align-items:center;gap:14px;font:800 1.2rem "Bricolage Grotesque",sans-serif;cursor:pointer;user-select:none}
 .sw input{position:absolute;opacity:0}
@@ -103,14 +96,10 @@ h2{font-size:clamp(2.1rem,4.4vw,3.4rem);font-weight:800;max-width:14em}
 .cookie{left:0;right:0;bottom:0;max-width:none;border-radius:0;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:5}
 .cookie b{margin:0}
 #dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:30}
-
-/* features */
 .feat{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:34px 56px}
 .feat div{border-left:3px solid var(--accent);padding-left:20px}
 .feat h3{font-size:1.5rem;margin-bottom:8px}
 .feat p{color:var(--mute)}
-
-/* download */
 .dl{position:relative;margin:40px 0 90px;padding:64px 44px 52px;border-radius:32px;background:linear-gradient(135deg,#2e2370,#221b4a 60%);border:1.5px solid var(--line);color:var(--ink);overflow:visible}
 .dl h2{max-width:11em}
 .dl p{opacity:.78;margin:14px 0 30px;max-width:34em}
@@ -118,10 +107,8 @@ h2{font-size:clamp(2.1rem,4.4vw,3.4rem);font-weight:800;max-width:14em}
 .dl .btn.pri{background:var(--grad);background-origin:border-box;color:#171233;border-color:transparent}
 .peek{position:absolute;right:48px;top:-58px;width:150px;animation:fl 4s ease-in-out infinite}
 footer{padding:0 0 40px;color:var(--mute);font-size:.92rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:99px;font-weight:600;opacity:0;pointer-events:none;transition:.3s;z-index:9;max-width:92vw;text-align:center}
 .toast.show{opacity:1;transform:translate(-50%,0)}
-
 @media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:10px}.stage{max-width:420px;margin:0 auto;width:100%;order:-1}.demo{grid-template-columns:1fr}.feat{grid-template-columns:1fr}.dl{padding:56px 24px 40px}.peek{width:110px;right:24px;top:-44px}.page{grid-template-columns:1fr}.side{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -135,100 +122,95 @@ footer{padding:0 0 40px;color:var(--mute);font-size:.92rem;display:flex;justify-
 <symbol id="eb" viewBox="0 0 64 64"><path d="M13 58V26C13 14 21 6 32 6s19 8 19 20v32l-6.3-5-6.4 5-6.3-5-6.3 5-6.4-5z"/></symbol>
 </defs>
 </svg>
-
 <div class="wrap">
 <nav>
-  <a class="logo" href="#top" aria-label="Wisp, accueil"><svg viewBox="0 0 64 64" aria-hidden="true"><path fill="url(#eg)" d="M13 58V26C13 14 21 6 32 6s19 8 19 20v32l-6.3-5-6.4 5-6.3-5-6.3 5-6.4-5z"/><circle cx="25" cy="27" r="3.6" fill="#281c60"/><circle cx="39" cy="27" r="3.6" fill="#281c60"/></svg>Wisp</a>
-  <a class="lnk" href="#telecharger">Télécharger</a>
+<a class="logo" href="#top" aria-label="Wisp, accueil"><svg viewBox="0 0 64 64" aria-hidden="true"><path fill="url(#eg)" d="M13 58V26C13 14 21 6 32 6s19 8 19 20v32l-6.3-5-6.4 5-6.3-5-6.3 5-6.4-5z"/><circle cx="25" cy="27" r="3.6" fill="#281c60"/><circle cx="39" cy="27" r="3.6" fill="#281c60"/></svg>Wisp</a>
+<a class="lnk" href="#telecharger">Télécharger</a>
 </nav>
-
 <header class="hero" id="top">
-  <div>
-    <h1>Surfez léger, comme un fantôme.</h1>
-    <p class="lead">Wisp bloque les publicités et les traqueurs pendant que vous naviguez. Les pages se chargent plus vite, et personne ne vous suit à la trace.</p>
-    <div class="btns">
-      <a class="btn pri" data-k="chrome" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.9 14l-4.1-7.1M15.1 14l-4.1 7.1"/></svg>Ajouter à Chrome</a>
-      <a class="btn" href="#telecharger">Voir l’appli mobile</a>
-    </div>
-    <p class="hint">Gratuit sur le Chrome Web Store. Aussi disponible sur Android et iOS.</p>
-  </div>
-
-  <div class="stage" id="stage" role="img" aria-label="Le fantôme Wisp qui suit votre curseur du regard. Touchez-le pour lui faire un clin d’œil.">
-    <span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
-    <div class="shadow"></div>
-    <div class="float">
-      <div class="tilt" id="tilt">
-        <svg class="back b2" viewBox="0 0 64 64" fill="#5b4fd6"><use href="#eb"/></svg>
-        <svg class="back" viewBox="0 0 64 64" fill="var(--accent)"><use href="#eb"/></svg>
-        <svg class="front" id="ghost" viewBox="0 0 64 64">
-          <use href="#eb" fill="url(#eg)"/>
-          <g id="face"><circle class="eye eyeL" cx="25" cy="27" r="3.6" fill="#281c60"/><circle class="eye eyeR" cx="39" cy="27" r="3.6" fill="#281c60"/><path class="arc" d="M34.6 27.6q4.4-4.8 8.8 0"/></g>
-        </svg>
-      </div>
-    </div>
-    <div class="bubble" id="bub" aria-hidden="true">Bouh !</div>
-  </div>
+<div>
+<h1>Surfez léger, comme un fantôme.</h1>
+<p class="lead">Wisp bloque les publicités et les traqueurs pendant que vous naviguez. Les pages se chargent plus vite, et personne ne vous suit à la trace.</p>
+<div class="btns">
+<a class="btn pri" data-k="chrome" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.9 14l-4.1-7.1M15.1 14l-4.1 7.1"/></svg>Ajouter à Chrome</a>
+<a class="btn" href="#telecharger">Voir l’appli mobile</a>
+</div>
+<p class="hint">Gratuit sur le Chrome Web Store. Aussi disponible sur Android et iOS.</p>
+</div>
+<div class="stage" id="stage" role="img" aria-label="Le fantôme Wisp qui suit votre curseur du regard. Touchez-le pour lui faire un clin d’œil.">
+<span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
+<div class="shadow"></div>
+<div class="float">
+<div class="tilt" id="tilt">
+<svg class="back b2" viewBox="0 0 64 64" fill="#5b4fd6"><use href="#eb"/></svg>
+<svg class="back" viewBox="0 0 64 64" fill="var(--accent)"><use href="#eb"/></svg>
+<svg class="front" id="ghost" viewBox="0 0 64 64">
+<use href="#eb" fill="url(#eg)"/>
+<g id="face"><circle class="eye eyeL" cx="25" cy="27" r="3.6" fill="#281c60"/><circle class="eye eyeR" cx="39" cy="27" r="3.6" fill="#281c60"/><path class="arc" d="M34.6 27.6q4.4-4.8 8.8 0"/></g>
+</svg>
+</div>
+</div>
+<div class="bubble" id="bub" aria-hidden="true">Bouh !</div>
+</div>
 </header>
-
 <section aria-labelledby="h-demo">
-  <h2 id="h-demo">Voyez la différence.</h2>
-  <p class="sub">Une page ordinaire, avant et après. Les pubs et les pop-ups arrivent un par un. Activez Wisp et regardez-les partir en poussière. Simulation illustrative.</p>
-  <div class="demo">
-    <div>
-      <label class="sw"><input type="checkbox" id="tg"><span class="track"></span>Wisp <span id="st">désactivé</span></label>
-      <p class="count" aria-live="polite"><b id="n">0</b>éléments bloqués sur cette page</p>
-    </div>
-    <div class="mock" id="mock">
-      <div class="bar"><i></i><i></i><i></i><span>un-site-quelconque.fr</span></div>
-      <div class="page">
-        <div>
-          <div class="ad wide it"><span>PUB : soldes jusqu’à -70 %</span></div>
-          <div class="ln t"></div><div class="ln"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:97%"></div><div class="ln" style="width:60%"></div><div class="ln" style="width:88%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:94%"></div>
-        </div>
-        <div class="side"><div class="ad it"><span>PUB</span></div><div class="ad it"><span>Sponsorisé</span></div></div>
-        <div class="pop win it"><b>Félicitations !</b><p>Vous êtes notre 1 000 000e visiteur.</p><u>Réclamer</u></div>
-        <div class="pop news it"><b>Restez informé</b><p>Recevez 12 mails par jour.</p><u>S’abonner</u></div>
-        <div class="pop notif it"><b>Autoriser les notifications ?</b><u>Autoriser</u></div>
-        <div class="pop vid it">▶ Pub vidéo<br>0:15</div>
-        <div class="pop chat it">Besoin d’aide ?</div>
-        <div class="pop cookie it"><b>Nous aimons vos cookies.</b><u>Tout accepter</u></div>
-      </div>
-      <div class="trk"><em class="it">pixel-tracker.net</em><em class="it">analytics-tiers.io</em><em class="it">retarget.cdn</em><em class="it">profil-pub.com</em></div>
-      <canvas id="dust" aria-hidden="true"></canvas>
-    </div>
-  </div>
+<h2 id="h-demo">Voyez la différence.</h2>
+<p class="sub">Une page ordinaire, avant et après. Les pubs et les pop-ups arrivent un par un. Activez Wisp et regardez-les partir en poussière. Simulation illustrative.</p>
+<div class="demo">
+<div>
+<label class="sw"><input type="checkbox" id="tg"><span class="track"></span>Wisp <span id="st">désactivé</span></label>
+<p class="count" aria-live="polite"><b id="n">0</b>éléments bloqués sur cette page</p>
+</div>
+<div class="mock" id="mock">
+<div class="bar"><i></i><i></i><i></i><span>un-site-quelconque.fr</span></div>
+<div class="page">
+<div>
+<div class="ad wide it"><span>PUB : soldes jusqu’à -70 %</span></div>
+<div class="ln t"></div><div class="ln"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:97%"></div><div class="ln" style="width:60%"></div><div class="ln" style="width:88%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:94%"></div>
+</div>
+<div class="side"><div class="ad it"><span>PUB</span></div><div class="ad it"><span>Sponsorisé</span></div></div>
+<div class="pop win it"><b>Félicitations !</b><p>Vous êtes notre 1 000 000e visiteur.</p><u>Réclamer</u></div>
+<div class="pop news it"><b>Restez informé</b><p>Recevez 12 mails par jour.</p><u>S’abonner</u></div>
+<div class="pop notif it"><b>Autoriser les notifications ?</b><u>Autoriser</u></div>
+<div class="pop vid it">▶ Pub vidéo<br>0:15</div>
+<div class="pop chat it">Besoin d’aide ?</div>
+<div class="pop cookie it"><b>Nous aimons vos cookies.</b><u>Tout accepter</u></div>
+</div>
+<div class="trk"><em class="it">pixel-tracker.net</em><em class="it">analytics-tiers.io</em><em class="it">retarget.cdn</em><em class="it">profil-pub.com</em></div>
+<canvas id="dust" aria-hidden="true"></canvas>
+</div>
+</div>
 </section>
-
 <section aria-labelledby="h-feat">
-  <h2 id="h-feat">Discret pour vous, sévère pour les pisteurs.</h2>
-  <div class="feat">
-    <div><h3>Bloque les pubs</h3><p>Bannières, fenêtres envahissantes et emplacements publicitaires s’effacent avant même d’apparaître.</p></div>
-    <div><h3>Coupe les traqueurs</h3><p>Les scripts qui observent ce que vous lisez et où vous cliquez sont arrêtés à la source.</p></div>
-    <div><h3>Reste léger</h3><p>Wisp s’appuie sur les règles intégrées à Chrome. Pas de service lourd en arrière-plan, pas de ralentissement.</p></div>
-    <div><h3>Nettoie les pages</h3><p>Les cadres vides laissés par les pubs sont masqués, la mise en page reste propre.</p></div>
-  </div>
+<h2 id="h-feat">Discret pour vous, sévère pour les pisteurs.</h2>
+<div class="feat">
+<div><h3>Bloque les pubs</h3><p>Bannières, fenêtres envahissantes et emplacements publicitaires s’effacent avant même d’apparaître.</p></div>
+<div><h3>Coupe les traqueurs</h3><p>Les scripts qui observent ce que vous lisez et où vous cliquez sont arrêtés à la source.</p></div>
+<div><h3>Reste léger</h3><p>Wisp s’appuie sur les règles intégrées à Chrome. Pas de service lourd en arrière-plan, pas de ralentissement.</p></div>
+<div><h3>Nettoie les pages</h3><p>Les cadres vides laissés par les pubs sont masqués, la mise en page reste propre.</p></div>
+</div>
 </section>
-
 <section id="telecharger" style="padding-bottom:0">
-  <div class="dl">
-    <svg class="peek" viewBox="0 0 200 240" aria-hidden="true"><use href="#gb" fill="url(#gg)"/><circle cx="74" cy="106" r="12" fill="#241f57"/><circle cx="126" cy="106" r="12" fill="#241f57"/><circle cx="71" cy="102" r="4" fill="#fff"/><circle cx="123" cy="102" r="4" fill="#fff"/></svg>
-    <h2>Prenez Wisp partout.</h2>
-    <p>Installez l’extension sur Chrome, ou téléchargez l’application sur votre téléphone.</p>
-    <div class="btns">
-      <a class="btn pri" data-k="chrome" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.9 14l-4.1-7.1M15.1 14l-4.1 7.1"/></svg>Ajouter à Chrome</a>
-      <a class="btn" data-k="apk" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger l’APK (Android)</a>
-      <a class="btn" data-k="ipa" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger l’IPA (iOS)</a>
-    </div>
-  </div>
+<div class="dl">
+<svg class="peek" viewBox="0 0 200 240" aria-hidden="true"><use href="#gb" fill="url(#gg)"/><circle cx="74" cy="106" r="12" fill="#241f57"/><circle cx="126" cy="106" r="12" fill="#241f57"/><circle cx="71" cy="102" r="4" fill="#fff"/><circle cx="123" cy="102" r="4" fill="#fff"/></svg>
+<h2>Prenez Wisp partout.</h2>
+<p>Installez l’extension sur Chrome, ou téléchargez l’application sur votre téléphone.</p>
+<div class="btns">
+<a class="btn pri" data-k="chrome" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5h8.2M8.9 14l-4.1-7.1M15.1 14l-4.1 7.1"/></svg>Ajouter à Chrome</a>
+<a class="btn" data-k="apk" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger l’APK (Android)</a>
+<a class="btn" data-k="ipa" href="#telecharger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger l’IPA (iOS)</a>
+</div>
+</div>
 </section>
-
 <footer><span>Wisp, version 1.4.0</span><span>Fait pour passer inaperçu.</span></footer>
 </div>
 <div class="toast" id="toast" role="status"></div>
-
 <script>
-// Renseignez vos liens ici quand ils seront prêts.
-var LINKS = { chrome: "", apk: "Wisp.apk", ipa: "Wisp.ipa" };
+var LINKS = {
+  chrome: "",
+  apk: "wisp-site/Wisp.apk",
+  ipa: "wisp-site/Wisp.ipa"
+};
 
 (function(){
   var $=function(s){return document.querySelector(s)};
@@ -237,11 +219,15 @@ var LINKS = { chrome: "", apk: "Wisp.apk", ipa: "Wisp.ipa" };
   var msgs={chrome:"Le lien du Chrome Web Store arrive bientôt.",apk:"Le fichier APK arrive bientôt.",ipa:"Le fichier IPA arrive bientôt."};
   document.querySelectorAll('[data-k]').forEach(function(a){
     var k=a.dataset.k;
-    if(LINKS[k]){a.href=LINKS[k];if(k!=='chrome')a.setAttribute('download','');if(/^https?:/.test(LINKS[k]))a.target='_blank'}
-    else a.addEventListener('click',function(e){e.preventDefault();say(msgs[k])});
+    if(LINKS[k]){
+      a.href=LINKS[k];
+      if(k!=='chrome')a.setAttribute('download','');
+      if(/^https?:/.test(LINKS[k]))a.target='_blank';
+    } else {
+      a.addEventListener('click',function(e){e.preventDefault();say(msgs[k])});
+    }
   });
 
-  // démo
   var tg=$('#tg'),mock=$('#mock'),n=$('#n'),st=$('#st'),cv=$('#dust'),ctx=cv.getContext('2d'),
       items=[].slice.call(mock.querySelectorAll('.it')),timers=[],parts=[],raf=0,nraf,seen=false,
       calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -282,7 +268,6 @@ var LINKS = { chrome: "", apk: "Wisp.apk", ipa: "Wisp.ipa" };
   });
   new IntersectionObserver(function(es){if(es[0].isIntersecting&&!seen){seen=true;if(!tg.checked)arrive()}},{threshold:.25}).observe(mock);
 
-  // fantôme
   var ghost=$('#ghost'),tilt=$('#tilt'),stage=$('#stage'),bub=$('#bub'),face=$('#face');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var tgt={x:0,y:0},cur={x:0,y:0},last=-1e5;
