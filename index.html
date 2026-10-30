@@ -28,7 +28,7 @@ nav a.lnk:hover{color:var(--ink)}
 .card h2{font-size:clamp(1.7rem,3vw,2.2rem);max-width:none}
 .card p{color:var(--mute);margin:12px 0 26px}
 .card .btn.pri{background:var(--grad);background-origin:border-box;border-color:transparent;color:#171233}
-.card .mail{font-weight:600;word-break:break-all}
+.card .mail{display:block;margin-top:6px;font-weight:600;font-size:clamp(1rem,4.2vw,1.1rem);color:var(--ink);overflow-wrap:anywhere}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:24px;padding:36px 0 80px;min-height:78vh}
 .hero h1{font-size:clamp(3rem,7.4vw,6.2rem);font-weight:800;padding-bottom:.08em;background:linear-gradient(180deg,#fff 25%,#b9adff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:1.25rem;color:var(--mute);max-width:30em;margin:26px 0 34px}
@@ -222,7 +222,7 @@ footer{padding:0 0 40px;color:var(--mute);font-size:.92rem;display:flex;justify-
 </div>
 <div class="card" id="contact">
 <h2>Me contacter</h2>
-<p>Une question, un bug, une idée ? Écrivez-moi à <a class="mail" href="mailto:contact.pro@get-wisp-app.com">contact.pro@get-wisp-app.com</a>.</p>
+<p>Une question, un bug, une idée ?<br>Écrivez-moi à :<a class="mail" href="mailto:contact.pro@get-wisp-app.com">contact.pro@get-wisp-app.com</a></p>
 <a class="btn pri" href="mailto:contact.pro@get-wisp-app.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Envoyer un mail</a>
 </div>
 </div>
