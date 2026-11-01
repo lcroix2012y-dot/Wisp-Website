@@ -179,7 +179,7 @@ footer{padding:0 0 40px;color:var(--mute);font-size:.92rem;display:flex;justify-
 <div class="ad wide it"><span>PUB : soldes jusqu’à -70 %</span></div>
 <div class="ln t"></div><div class="ln"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:97%"></div><div class="ln" style="width:60%"></div><div class="ln" style="width:88%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:94%"></div>
 </div>
-<div class="side"><div class="ad it"><span>PUB</span></div><div class="ad it"><span>Sponsorisé</span></div></div>
+<div class="side"><div class="ad it"><span>PUB</span></div><div class="ad it"><span></span></div></div>
 <div class="pop win it"><b>Félicitations !</b><p>Vous êtes notre 1 000 000e visiteur.</p><u>Réclamer</u></div>
 <div class="pop news it"><b>Restez informé</b><p>Recevez 12 mails par jour.</p><u>S’abonner</u></div>
 <div class="pop notif it"><b>Autoriser les notifications ?</b><u>Autoriser</u></div>
@@ -236,7 +236,7 @@ var LINKS = {
   apk: "wisp-site/Wisp.apk",
   ipa: "wisp-site/Wisp.ipa"
 };
-
+ 
 (function(){
   var $=function(s){return document.querySelector(s)};
   var toast=$('#toast'),tt;
@@ -252,7 +252,7 @@ var LINKS = {
       a.addEventListener('click',function(e){e.preventDefault();say(msgs[k])});
     }
   });
-
+ 
   var tg=$('#tg'),mock=$('#mock'),n=$('#n'),st=$('#st'),cv=$('#dust'),ctx=cv.getContext('2d'),
       items=[].slice.call(mock.querySelectorAll('.it')),timers=[],parts=[],raf=0,nraf,seen=false,
       calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -292,7 +292,7 @@ var LINKS = {
     else{count(0);arrive()}
   });
   new IntersectionObserver(function(es){if(es[0].isIntersecting&&!seen){seen=true;if(!tg.checked)arrive()}},{threshold:.25}).observe(mock);
-
+ 
   var ghost=$('#ghost'),tilt=$('#tilt'),stage=$('#stage'),bub=$('#bub'),face=$('#face');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var tgt={x:0,y:0},cur={x:0,y:0},last=-1e5;
@@ -321,3 +321,4 @@ var LINKS = {
 </script>
 </body>
 </html>
+ 
